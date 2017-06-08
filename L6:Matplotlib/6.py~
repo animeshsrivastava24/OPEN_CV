@@ -1,0 +1,15 @@
+import numpy as np
+import cv2
+from matplotlib import pyplot as plt
+img = cv2.imread('/home/animesh/Desktop/messi5.jpg',1)
+a=cv2.imread('/home/animesh/Desktop/messi5.jpg',1)
+cv2.imshow('img',a)
+#wait key function uses a argument say x , which denotes a millisecond, as name suggest it waits for x millisecond
+#if within x millisecond a key is pressed then it returns the value of the key in integer form
+#aLso if 0 is used as x then it waits indefinitely for any key to be pressed then next step of program occurs
+
+plt.imshow(img, cmap = 'gray', interpolation = 'bicubic')
+plt.xticks([]), plt.yticks([]) # to hide tick values on X and Y axis
+plt.show()
+cv2.waitKey(0)
+cv2.destroyAllWindows()
