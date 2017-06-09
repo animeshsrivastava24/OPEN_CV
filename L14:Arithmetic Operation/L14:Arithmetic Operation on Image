@@ -1,0 +1,14 @@
+http://answers.opencv.org/question/4783/image-type-vs-image-depth/
+For the addition of image we can utilize both OpenCV and Numpy Array Operations 
+cv2.add() [It is a saturation operaion]
+res= img1 + img 2 [It is a modulo operation]
+>>> x = np.uint8([250])
+>>> y = np.uint8([10])
+>>> print cv2.add(x,y) # 250+10 = 260 => 255
+[[255]]
+>>> print x+y
+[4]
+# 250+10 = 260 % 256 = 4
+It will be more visible when you add two images. OpenCV function will provide a better result. So always better stick
+to OpenCV functions.
+To add two images they must have same depth and type
