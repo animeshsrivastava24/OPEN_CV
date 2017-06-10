@@ -9,3 +9,7 @@ http://docs.opencv.org/2.4/doc/tutorials/imgproc/threshold/threshold.html
 
 To understand masking
 https://pythonprogramming.net/image-arithmetics-logic-python-opencv-tutorial/
+ 
+To understand overlaying of two images 
+https://stackoverflow.com/questions/32774956/can-anybody-help-me-to-explain-arguments-meaning-in-res-cv2-bitwise-andimg-im
+http://opencvexamples.blogspot.com/2013/10/bitwise-and-or-xor-and-not.html
