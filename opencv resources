@@ -2,3 +2,10 @@
 Method to understand numpy array slicing and understanding better about ROI
 
 https://docs.scipy.org/doc/numpy-dev/user/quickstart.html
+
+
+To understand threshold
+http://docs.opencv.org/2.4/doc/tutorials/imgproc/threshold/threshold.html
+
+To understand masking
+https://pythonprogramming.net/image-arithmetics-logic-python-opencv-tutorial/
