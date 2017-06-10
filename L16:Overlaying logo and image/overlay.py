@@ -24,6 +24,16 @@ ret, mask = cv2.threshold(img2gray, 220, 255, cv2.THRESH_BINARY_INV)
 mask_inv = cv2.bitwise_not(mask)
 #mask_inv=255-mask both are true 
 
+"""
+Concept Story : NOw we need to add both the img1 and img2 by overlaying them, the basic concept behind this is the value of color black i.e. 0 in open cv.So black+ anycolor= anycolor because value of black is 0.
+Now we need to add the logo to img1.So lets make logo as foreground and img1 as background.
+So let logo be comprised of mainlogo(the python region)+ rest black color
+      and img1 be comprised of region where logo will be added (it will be black) + rest the img1 region
+So that when we add both the mainlogo of logo will combine with the black region of img1 and form logo,and the black region of logo combine with the rest of img1.And thus we will obtain our ROI
+
+
+"""
+
 
 #cv2.imshow("mask_inv",mask_inv)
 # Now black-out the area of logo in ROI
