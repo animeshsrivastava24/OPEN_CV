@@ -1,0 +1,22 @@
+import cv2
+import numpy as np
+
+cap = cv2.VideoCapture(0)
+def nothing(x):
+	pass
+while(1):
+
+    _, frame = cap.read()
+    cv2.createTrackbar('minVal','Edges',0,255,nothing)
+    cv2.createTrackbar('maxVal','Edges',0,255,nothing)	
+    minVal = cv2.getTrackbarPos('minVal','Edges')
+    maxVal = cv2.getTrackbarPos('maxVal','Edges')
+    edges = cv2.Canny(frame,minVal,maxVal)
+    cv2.imshow('Edges',edges)
+
+    k = cv2.waitKey(5) & 0xFF
+    if k == 27:
+        break
+
+cv2.destroyAllWindows()
+cap.release()
